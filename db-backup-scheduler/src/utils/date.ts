@@ -28,6 +28,6 @@ export const getDate = (format: DateFormatType) => {
 
   if (format === DateFormatType.YYYYMMDDHH_COLON) {
     const { year, month, day, hours } = createDate(now);
-    return `${year}:${month}:${day}:${hours}`;
+    return `${year}-${month}-${day} ${hours}`;
   }
 };

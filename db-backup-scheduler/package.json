@@ -1,0 +1,27 @@
+{
+  "name": "db-backup-scheduler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc-watch --onSuccess \"node dist/app.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.428.0",
+    "@slack/web-api": "^6.9.0",
+    "@types/node": "^20.8.6",
+    "dotenv": "^16.3.1",
+    "mysqldump": "^3.2.0",
+    "node-schedule": "^2.1.1",
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node-schedule": "^2.1.1",
+    "tsc-watch": "^6.0.4"
+  }
+}

@@ -14,7 +14,8 @@ const createDate = (now: Date) => {
 };
 
 export const getDate = (format: DateFormatType) => {
-  const now = new Date();
+  const now = new Date(new Date());
+  now.setHours(now.getHours() + 9);
 
   if (format === DateFormatType.YYYYMMDDHH) {
     const { year, month, day, hours } = createDate(now);
